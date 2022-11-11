@@ -1,0 +1,266 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #d5eff2;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+.input-control {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 8px;
+  font-size: 1.1rem;
+}
+
+/* Utility classes */
+
+.btn {
+  cursor: pointer;
+  border: none;
+  border-radius: 3px;
+  padding: 8px 11px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.btn-primary {
+  background-color: hsl(232, 64%, 64%);
+}
+
+.btn-secondary {
+  background-color: hsl(340, 42%, 61%);
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.success {
+  color: rgb(114, 188, 114);
+}
+
+.danger {
+  color: rgb(182, 92, 92);
+}
+
+.info {
+  color: rgb(92, 124, 220);
+}
+
+.page__container {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+}
+
+.footer {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+header {
+  width: 100%;
+  height: 20ch;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url(./header-bg.jpg) center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.meal-search {
+  max-width: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #1a2601;
+  padding: 10px 20px;
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px);
+}
+
+.meal-search h2 {
+  font-size: 34px;
+  padding: 0;
+  margin: 20px 0px;
+}
+
+.meal-search h2 > span {
+  color: #f20544;
+}
+
+form {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #1a2601;
+  padding: 5px;
+  border-radius: 3px;
+  width: 30ch;
+}
+
+form #search {
+  background: none;
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 5px;
+  appearance: none;
+}
+
+.btn-search {
+  border: none;
+  color: #1a2601;
+  background-color: transparent;
+  margin: 0;
+}
+
+section.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.meal-result {
+  width: 100%;
+}
+
+#meal {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 2rem 0;
+}
+
+.meals {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.meal {
+  width: 20rem;
+  background-color: #fff;
+  padding: 5px 5px 1.5rem 5px;
+  text-align: center;
+  border-radius: 3px;
+}
+
+.meal h3 {
+  font-weight: 300;
+  font-size: 1.3rem;
+  margin-bottom: 0.9rem;
+}
+
+.meal a {
+  background-color: #d97904;
+  color: #fff;
+  font-weight: 500;
+  padding: 5px;
+  border-radius: 3px;
+  transition: all 0.3s;
+  font-size: 18px;
+}
+
+.meal a:hover {
+  background-color: #ff8c00;
+}
+
+/* Recipe Modal */
+.meal-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+.meal-details {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border-radius: 3px;
+  height: 90%;
+  width: 90%;
+  max-width: 50rem;
+  overflow-y: scroll;
+  border-radius: 3px;
+}
+
+.meal-details::-webkit-scrollbar {
+  height: 5px;
+  width: 4px;
+  border: 1px solid #d5d5d5;
+  background-color: #d5d5d5;
+}
+
+.meal-details::-webkit-scrollbar-track {
+  --webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.meal-details::-webkit-scrollbar-thumb {
+  background-color: #93a603;
+  outline: 1px solid #eee;
+}
+
+.meal-details button {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  color: #f20544;
+}
+
+.recipe-content > * {
+  padding: 5px;
+}
+
+.recipe-title {
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.recipe-instruction h3 {
+  font-size: 1.5rem;
+}
+
+.recipe-instruction p {
+  line-height: 1.4;
+}
+
+.recipe-link {
+  text-align: center;
+  margin: 1.5rem 0px;
+}
+
+.recipe-link a {
+  text-align: center;
+  background-color: #93a603;
+  color: #fff;
+  padding: 7px;
+  border-radius: 3px;
+}

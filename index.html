@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <title>Recipes Search App</title>
+  </head>
+  <body>
+    <div class="page__container">
+      <div class="app-container">
+        <header>
+          <div class="meal-search container">
+            <h2>What would you <span>like to cook?</span></h2>
+            <div class="search-box">
+              <form action="" onsubmit="return false">
+                <input type="text" id="search" placeholder="Search..." />
+                <button type="submit" class="btn btn-search">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </header>
+        <section class="container">
+          <div class="meal-result">
+            <div id="meal">
+              <!-- Single meal item -->
+              <!-- <div class="meal-item meal">
+                <div class="meal-img">
+                  <img src="./assets/meal.jpg" alt="recipe" />
+                </div>
+                <div class="meal-name">
+                  <h3>Recipe Meal</h3>
+                  <a href="#" class="recipe-btn">View Recipe &rarr;</a>
+                </div>
+              </div> -->
+              <!-- Single meal item END -->
+            </div>
+          </div>
+          <!-- Meal Modal -->
+          <div class="meal-modal">
+            <div class="meal-details">
+              <button class="btn btn-close">
+                <i class="fa-solid fa-xmark"></i>
+              </button>
+              <!-- Meal content -->
+              <div class="recipe-content">
+                <!-- <div class="recipe-img">
+                  <img src="./assets/meal.jpg" alt="recipe" />
+                </div>
+                <h2 class="recipe-title">Food Recipe</h2>
+                <div class="recipe-instruction">
+                  <h3>Instruction</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Animi quasi possimus veniam. Aliquam, fuga illo. Fugiat vel
+                    soluta aperiam ratione iure consequatur numquam quasi
+                    expedita ipsa error, eligendi molestiae perferendis. Lorem,
+                    ipsum dolor sit amet consectetur adipisicing elit. Quis
+                    nostrum rerum soluta quod sed ipsam laudantium expedita
+                    mollitia dolor quisquam!
+                  </p>
+                </div>
+                <div class="recipe-link">
+                  <a href="#" target="_blank">Watch Video</a>
+                </div> -->
+              </div>
+            </div>
+          </div>
+          <!-- Meal Modal END -->
+        </section>
+      </div>
+      <footer class="footer">Copyright Belma Besirevic 2022</footer>
+    </div>
+
+    <!-- scripts -->
+    <script src="./assets/script.js"></script>
+  </body>
+</html>
